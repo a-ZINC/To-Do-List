@@ -1,6 +1,22 @@
 let text=document.getElementsByClassName('text')[0];
 let task=document.querySelector('.task');
 
+
+let light=document.querySelector('.light');
+let dark=document.querySelector('.dark');
+let wrapped=document.querySelector('.wrapped');
+light.addEventListener('click', function(){
+    
+    console.log(wrapped);
+    wrapped.classList.add('change');
+    console.log('hiii');
+});
+dark.addEventListener('click', function(){
+    
+    wrapped.classList.remove('change');
+    console.log(('hellooo'));
+});
+
 function addtask(){
     if(text.value===''){
         alert('kuch likh le, likhta kyu nhi , likhna');
