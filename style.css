@@ -1,0 +1,183 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;700;800;900&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.wrap{
+    position: absolute;
+    top: 25%;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading{
+    color: #FCF5F3 ;
+    font-size: 3rem;
+    text-shadow: 4px 0 10px solid black;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.6rem;
+    margin-bottom: 2rem;
+}
+.role{
+    color: coral;
+}
+.text-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.text{
+    min-width: 400px ;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #181a1a;
+    color: rgb(247, 226, 223);
+    outline: none;
+    
+}
+.text:focus , .text:hover{
+    border: 1px solid #444;
+    text-decoration: none;
+    color: #e0d7d5;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-color: rgb(0, 0, 0);
+}
+.btn{
+    display: inline;
+    background-color: rgb(247, 226, 223);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    padding: 0.49rem 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0;
+    z-index: 1;
+    font-size: 0.8rem;
+    cursor: pointer;
+    
+}
+
+.btn:hover::before{
+    background-color: white;
+    box-shadow: #fff8 0 0 10px;
+}
+.btn:hover p{
+    color: rgba(73,93,109,1);
+}
+.taskitem{
+    margin-bottom: 0.7rem;
+    width: 300px;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    background-color: rgb(26, 27, 27);
+    color: rgb(133, 133, 133);
+}
+.para{
+    width: 70%;
+    line-height: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+    min-height: 2rem;
+    overflow-x: hidden;
+}
+.icon{
+    width:25%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding-right: 0.6rem;
+
+}
+
+.check{
+    padding: 0.45rem;
+    border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: medium;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.check i{
+    opacity: 0;
+}
+
+.trash{
+    padding: 0.45rem;
+    border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: medium;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.check:hover{
+    transform: scale(1);
+}
+.trash:hover{
+    transform: scale(1);
+}
+.check:active{
+    transform: scale(0.9);
+    background-color: rgb(247, 226, 223);
+}
+.trash:active{
+    transform: scale(0.9);
+    background-color: rgb(247, 226, 223);
+}
+.line .para{
+    text-decoration: line-through;
+}
+.trash i{
+    font-size: medium;
+}
+.check i{
+    font-size: medium;
+}
+.dt{
+    color: rgba(247, 226, 223,0.5);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+
+
+
